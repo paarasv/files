@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Sejal 🌿</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="cursor-glow"></div>
+
+  <!-- ░░ INTRO OVERLAY ░░ -->
+  <div id="intro-overlay">
+    <div class="intro-inner">
+      <p class="intro-small">psst. this is for you.</p>
+      <h1 class="intro-name">Sejal.</h1>
+      <p class="intro-tap">tap anywhere to begin ✦</p>
+    </div>
+  </div>
+
+  <!-- ░░ FIREFLIES ░░ -->
+  <div id="fireflies"></div>
+
+  <!-- ░░ PARTICLES ░░ -->
+  <div id="particles"></div>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <canvas id="starCanvas"></canvas>
+
+    <div class="forest-scene">
+      <div class="forest-gradient"></div>
+      <div class="forest-trees back"></div>
+      <div class="mist-band mist-1"></div>
+      <div class="forest-trees mid"></div>
+      <div class="mist-band mist-2"></div>
+      <div class="forest-trees front"></div>
+      <div class="ground-fog"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ a small world, made only for you ✦</p>
+      <h1 class="hero-title">
+        <span class="ht-line">Happy</span>
+        <span class="ht-line ht-big">Birthday</span>
+        <span class="ht-line ht-name">Sejal</span>
+      </h1>
+      <p class="hero-sub">the one with those eyes.</p>
+
+      <div class="scroll-nudge">
+        <span>wander down</span>
+        <svg viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="22" height="32" rx="11" stroke="currentColor" stroke-width="1.5"/>
+          <circle class="scroll-dot" cx="12" cy="10" r="3" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- tiny totoro peek -->
+    <div class="totoro-peek" title="🌿">
+      <div class="totoro-body">
+        <div class="totoro-ears"></div>
+        <div class="totoro-eyes"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       OPENING — personal note
+  ══════════════════════════════════════ -->
+  <section class="note-section">
+    <div class="note-wrap reveal">
+      <span class="note-datestamp">today. your day.</span>
+      <p class="note-line">Heyyy 🥰 </p>
+      <p class="note-body">
+        I don't have a speech.<br/>
+        Just a feeling that the world is a better place<br/>
+        because you read slowly,<br/>
+        dance with your whole soul,<br/>
+        and ask questions most people are afraid to ask.
+      </p>
+      <p class="note-body" style="margin-top:1.4rem">
+        That's not a small thing.<br/>
+        That's everything.
+      </p>
+      <div class="note-sig">— with love 🌿</div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       SQUIRTLE / TEASING CARD
+  ══════════════════════════════════════ -->
+  <section class="tease-section">
+    <div class="tease-card reveal">
+      <div class="squirtle-wrap">
+        <div class="squirtle" id="squirtleEl">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <!-- shell -->
+            <ellipse cx="60" cy="68" rx="36" ry="28" fill="#5b9c8f"/>
+            <ellipse cx="60" cy="66" rx="30" ry="22" fill="#7ec8b4"/>
+            <!-- hex pattern -->
+            <path d="M52 55 l8-8 8 8 -8 8z" fill="#5b9c8f" opacity=".5"/>
+            <path d="M44 63 l8-8 8 8 -8 8z" fill="#5b9c8f" opacity=".5"/>
+            <path d="M60 63 l8-8 8 8 -8 8z" fill="#5b9c8f" opacity=".5"/>
+            <!-- body / head -->
+            <ellipse cx="60" cy="46" rx="26" ry="24" fill="#a8d8ea"/>
+            <!-- big forehead highlight -->
+            <ellipse cx="60" cy="32" rx="18" ry="12" fill="#c2e8f5" opacity=".7"/>
+            <!-- eyes -->
+            <ellipse cx="50" cy="44" rx="9" ry="10" fill="white"/>
+            <ellipse cx="70" cy="44" rx="9" ry="10" fill="white"/>
+            <ellipse cx="51" cy="45" rx="5.5" ry="6.5" fill="#1a3550"/>
+            <ellipse cx="71" cy="45" rx="5.5" ry="6.5" fill="#1a3550"/>
+            <circle cx="53" cy="43" r="1.8" fill="white"/>
+            <circle cx="73" cy="43" r="1.8" fill="white"/>
+            <!-- smile -->
+            <path d="M52 56 Q60 63 68 56" stroke="#1a3550" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            <!-- ears -->
+            <ellipse cx="36" cy="40" rx="5" ry="7" fill="#a8d8ea"/>
+            <ellipse cx="84" cy="40" rx="5" ry="7" fill="#a8d8ea"/>
+            <!-- arms -->
+            <ellipse cx="30" cy="62" rx="7" ry="5" fill="#a8d8ea" transform="rotate(-30 30 62)"/>
+            <ellipse cx="90" cy="62" rx="7" ry="5" fill="#a8d8ea" transform="rotate(30 90 62)"/>
+            <!-- tail -->
+            <path d="M78 80 Q95 75 98 88 Q95 95 85 90" fill="#5b9c8f"/>
+          </svg>
+        </div>
+        <div class="squirtle-bubble" id="squirtleBubble">hover me 👀</div>
+      </div>
+      <div class="tease-text">
+        <p class="tease-heading">okay so —</p>
+        <p class="tease-lines">
+          those eyes.<br/>
+          <span class="tease-em">genuinely unfair.</span>
+        </p>
+        <p class="tease-lines" style="margin-top:1rem">
+          the forehead?<br/>
+          <span class="tease-small">more surface area for all those thoughts ✨</span>
+        </p>
+        <p class="tease-lines" style="margin-top:1rem">
+          and yes,<br/>
+          you do look like squirtle.<br/>
+          <span class="tease-small">adorably, charmingly, perfectly so.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+
+  <!-- ══════════════════════════════════════
+       GHIBLI — immersive moment
+  ══════════════════════════════════════ -->
+  <section class="ghibli-section">
+    <div class="ghibli-bg-art">
+      <div class="ghibli-sky"></div>
+      <div class="ghibli-clouds"></div>
+      <div class="ghibli-field"></div>
+      <div class="ghibli-trees-layer"></div>
+    </div>
+    <div class="ghibli-content reveal">
+      <p class="ghibli-label">✦ in another world ✦</p>
+      <h2 class="ghibli-heading">tum shayad unhi mein se ho —</h2>
+      <div class="ghibli-lines">
+       <p>jo mil kar bhi poore nahi milte.</p>
+  <p>jinhe samajhne mein umr lag jaati hai.</p>
+  <p>tumhari khamoshi bhi awaaz rakhti hai,</p>
+  <p>aur aankhon mein jaise koi purani shaam rehti hai.</p>
+  <p>ajeeb ho tum… aur khoobsurat bhi.</p>
+      </div>
+      <p class="ghibli-sign">jaise adhuri nazm. 🌙 </p>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       OSHO WISDOM — interactive
+  ══════════════════════════════════════ -->
+  <section class="osho-section">
+    <div class="osho-inner reveal">
+      <p class="osho-label">a little wisdom for your birthday</p>
+      <div class="osho-card" id="oshoCard">
+        <div class="osho-leaf-btn" id="oshoLeaf" title="tap for new wisdom">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 5 C10 10 5 30 15 48 C25 40 45 38 50 20 C55 8 35 2 30 5Z" fill="#5a9e6f" opacity=".9"/>
+            <path d="M30 5 C30 20 28 35 15 48" stroke="#2d5a3d" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="osho-quote-text" id="oshoQuote">
+          "The real question is not whether life exists after death.<br/>
+          The real question is: are you alive before death?"
+        </p>
+        <p class="osho-attr">— Osho</p>
+        <p class="osho-tap-hint">tap the leaf ✦</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ══════════════════════════════════════
+       LETTER
+  ══════════════════════════════════════ -->
+  <section class="letter-section">
+    <div class="letter-wrap reveal">
+      <div class="letter-paper">
+        <div class="letter-postmark">🌸 today</div>
+        <p class="letter-salutation"></p>
+
+        <p>You have the kind of eyes that make a sentence stop mid-air.</p>
+        <p>and yes, the forehead. I know. I'm not sorry. it's kind of iconic.</p>
+
+        <div class="letter-divider">✦ ✦ ✦</div>
+
+        <p>this year, I hope you </p>
+        <ul class="letter-wishes">
+          <li>find a book that rewires something in you</li>
+          <li>watch a film that makes you miss it before it ends</li>
+          <li>dance until you forget your name</li>
+          <li>write code that surprises even you</li>
+          <li>have one of those conversations that lasts till 3am and solves nothing but everything</li>
+          <li>sit in a quiet place and feel truly,  feel how alive you are</li>
+        </ul>
+
+        <div class="letter-divider">✦ ✦ ✦</div>
+
+        <p>you are rare.<br/>not "rare" as a compliment.<br/><em>rare as in: the world doesn't make many like you.</em></p>
+
+        <p class="letter-closing">
+          with so much warmth,<br/>
+          <span class="letter-sig">Paaras</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FINAL CELEBRATION
+  ══════════════════════════════════════ -->
+  <section class="final-section" id="final">
+    <!-- Stars background -->
+    <div id="finalStars"></div>
+    <canvas id="confettiCanvas"></canvas>
+    <div class="final-content reveal">
+      <p class="final-small">✦ wishing you the most magical year yet ✦</p>
+      <h2 class="final-big">Happy<br/><em>Birthday</em><br/><strong>Sejal</strong></h2>
+      <!-- FIX: id matches JS getElementById('celebrateBtn') -->
+      <button class="celebrate-btn" id="celebrateBtn">
+        <span>🎊</span> celebrate!
+      </button>
+      <p class="final-note" id="finalNote" style="opacity:0"></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
